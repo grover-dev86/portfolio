@@ -46,5 +46,4 @@ export const codeSkills = [
   { name: "Node.js", level: 75 },
   { name: "HTML / CSS", level: 96 },
   { name: "Git", level: 82 },
-  { name: "PHP", level: 78 },
 ];
