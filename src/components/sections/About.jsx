@@ -30,7 +30,7 @@ export default function About() {
         Sobre <span className="accent">Mí</span>
       </h2>
 
-      <div className="mt-8 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+      <div className="mt-8 grid gap-10 xl:grid-cols-[1.4fr_1fr]">
         <p className="text-ink-500 leading-relaxed text-sm md:text-[15px]">
           {personalInfo.bio}
         </p>

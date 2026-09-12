@@ -35,7 +35,7 @@ export default function Portfolio() {
           No hay proyectos en esta categoría todavía.
         </p>
       ) : (
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {filtered.map((item) => (
             <a
               key={item.id}

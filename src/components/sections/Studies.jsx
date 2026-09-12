@@ -49,7 +49,7 @@ export default function Studies() {
     <SectionShell>
       <h2 className="section-title">Estudios</h2>
 
-      <div className="mt-8 grid gap-10 lg:grid-cols-2">
+      <div className="mt-8 grid gap-10 xl:grid-cols-2">
         <div>
           <h3 className="text-base font-semibold text-ink-900 mb-5">
             Formación

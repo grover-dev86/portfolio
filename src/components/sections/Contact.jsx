@@ -158,8 +158,8 @@ export default function Contact() {
     <SectionShell>
       <h2 className="section-title">Contacto</h2>
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[220px_1fr]">
-        <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
+      <div className="mt-8 grid gap-8 xl:grid-cols-[220px_1fr]">
+        <div className="grid grid-cols-2 xl:grid-cols-1 gap-3">
           <InfoCard icon={HiMapPin} label="Lima" />
           <InfoCard icon={HiPhone} label={personalInfo.phone} />
           <InfoCard icon={HiEnvelope} label={personalInfo.email} />
