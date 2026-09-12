@@ -4,14 +4,14 @@ export const profile = {
   avatar: "/img/grov.jpg",
 	cvUrl: "/cv-grover-cristobal.pdf",
   social: [
-    { id: "linkedin", label: "LinkedIn", url: "https://linkedin.com" },
-    { id: "instagram", label: "Instagram", url: "https://instagram.com" },
+		{ id: "linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/grover-cristobal-2130b4294/" },
+		{ id: "instagram", label: "Instagram", url: "https://www.instagram.com/grover_dev86/" },
   ],
   footer: "© 2026 Grover Cristobal Web",
 };
 
 export const personalInfo = {
-  bio: "Soy Grover Cristobal, desarrollador web freelance con base en Lima, Perú. Me especializo en crear sitios y aplicaciones web modernas con React y JavaScript, cuidando el rendimiento, la accesibilidad y una experiencia de usuario clara. Disfruto convirtiendo ideas en productos digitales funcionales y acompañar a quienes empiezan en la programación.",
+  bio: "Soy Grover Cristobal, desarrollador web freelance con base en Lima, Perú. Me especializo en crear sitios y aplicaciones web modernas con React, Typescript, Next.js y JavaScript, cuidando el rendimiento, la accesibilidad y una experiencia de usuario clara. Disfruto convirtiendo ideas en productos digitales funcionales.",
   country: "Perú",
   city: "Lima",
 	email: "grover.cristobal.1986@gmail.com",

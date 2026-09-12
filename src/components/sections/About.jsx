@@ -29,8 +29,8 @@ export default function About() {
         </p>
 
         <div className="space-y-3">
-          <InfoRow label="País" value={personalInfo.country} />
           <InfoRow label="Ciudad" value={personalInfo.city} />
+          <InfoRow label="País" value={personalInfo.country} />
           <InfoRow label="Correo" value={personalInfo.email} />
           <InfoRow label="Teléfono" value={personalInfo.phone} />
         </div>
