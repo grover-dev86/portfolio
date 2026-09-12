@@ -18,7 +18,7 @@ export const personalInfo = {
   phone: "+51 947 289 521",
   status: "Desarrollador Freelance",
   mapEmbed:
-    "https://www.openstreetmap.org/export/embed.html?bbox=-3.7138%2C40.4124%2C-3.6938%2C40.4324&layer=mapnik&marker=40.4224%2C-3.7038",
+    "https://www.openstreetmap.org/export/embed.html?bbox=-77.0528%2C-12.0564%2C-77.0328%2C-12.0364&layer=mapnik&marker=-12.0464%2C-77.0428",
 };
 
 export const services = [
