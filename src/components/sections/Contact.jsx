@@ -10,6 +10,9 @@ import { personalInfo } from "../../data/profile";
 
 const initialForm = { name: "", email: "", subject: "", message: "" };
 
+// 👇 Reemplaza esto por tu Access Key de https://web3forms.com (gratis, sin tarjeta).
+const WEB3FORMS_ACCESS_KEY = "TU_ACCESS_KEY_AQUI";
+
 function InfoCard({ icon: Icon, label }) {
   return (
     <div className="flex flex-col items-center justify-center text-center gap-2 px-3 py-4 rounded-xl border border-ink-300/30 bg-white hover:border-brand-300 hover:shadow-sm transition min-w-0">
@@ -104,7 +107,7 @@ function validate(form) {
 export default function Contact() {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState("idle"); // idle | sending | sent
+  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -114,7 +117,7 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const v = validate(form);
     if (Object.keys(v).length) {
@@ -122,12 +125,32 @@ export default function Contact() {
       return;
     }
     setStatus("sending");
-    // Simulated send — swap with a real endpoint later.
-    setTimeout(() => {
-      setStatus("sent");
-      setForm(initialForm);
-      setTimeout(() => setStatus("idle"), 3500);
-    }, 700);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("sent");
+        setForm(initialForm);
+        setTimeout(() => setStatus("idle"), 3500);
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -212,6 +235,11 @@ export default function Contact() {
               {status === "sent" && (
                 <span className="text-sm text-green-600 animate-fade-in">
                   ¡Mensaje enviado!
+                </span>
+              )}
+              {status === "error" && (
+                <span className="text-sm text-red-500 animate-fade-in">
+                  Ocurrió un error. Inténtalo de nuevo.
                 </span>
               )}
             </div>
