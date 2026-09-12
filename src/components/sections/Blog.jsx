@@ -20,7 +20,7 @@ export default function Blog() {
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wider bg-white/90 backdrop-blur text-brand-500 font-semibold px-2.5 py-1 rounded-full">
+              <span className="absolute top-3 left-3 text-[10px] uppercase tracking-wider bg-white/90 dark:bg-night-card/90 backdrop-blur text-brand-500 font-semibold px-2.5 py-1 rounded-full">
                 {post.category}
               </span>
             </div>

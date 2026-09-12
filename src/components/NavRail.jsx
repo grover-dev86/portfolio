@@ -9,7 +9,7 @@ export default function NavRail({ activeSection, onNavigate }) {
   return (
     <nav
       aria-label="Navegación principal"
-      className="hidden lg:flex flex-col items-center gap-1 bg-white shadow-rail rounded-full py-4 px-2"
+      className="hidden lg:flex flex-col items-center gap-1 bg-white dark:bg-night-card shadow-rail rounded-full py-4 px-2"
     >
       {navigationItems.map((item) => {
         const Icon = item.icon;

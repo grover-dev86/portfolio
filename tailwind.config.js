@@ -2,11 +2,13 @@
 // updated shadows
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         brand: {
-          50: "#e7f8fd",
+          // 50 is a CSS variable so it flips to a dark surface in dark mode
+          50: "rgb(var(--c-brand-50) / <alpha-value>)",
           100: "#c4eefa",
           200: "#8edef4",
           300: "#4ecbec",
@@ -17,13 +19,21 @@ export default {
           800: "#125e77",
           900: "#0e4a5e",
         },
+        // ink text colors are CSS variables so they flip automatically per theme
         ink: {
-          900: "#111418",
-          700: "#3a3f47",
-          500: "#6b7280",
-          300: "#9ca3af",
+          900: "rgb(var(--c-ink-900) / <alpha-value>)",
+          700: "rgb(var(--c-ink-700) / <alpha-value>)",
+          500: "rgb(var(--c-ink-500) / <alpha-value>)",
+          300: "rgb(var(--c-ink-300) / <alpha-value>)",
         },
         canvas: "#f4f6f8",
+        // Dark-mode surfaces
+        night: {
+          bg: "#0b0e12",
+          card: "#151b23",
+          soft: "#1c232d",
+          border: "#2a3340",
+        },
       },
       fontFamily: {
         sans: ['Poppins', 'system-ui', 'sans-serif'],

@@ -1,4 +1,5 @@
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { HiSun, HiMoon } from "react-icons/hi2";
 import { profile } from "../data/profile";
 import { navigationItems } from "../data/navigation";
 
@@ -16,6 +17,8 @@ export default function Sidebar({
   onCloseMobile,
   activeSection,
   onNavigate,
+  theme,
+  onToggleTheme,
 }) {
   return (
     <>
@@ -38,6 +41,16 @@ export default function Sidebar({
           isMobileOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0",
         ].join(" ")}
       >
+        <button
+          type="button"
+          onClick={onToggleTheme}
+          aria-label={theme === "dark" ? "Activar modo claro" : "Activar modo oscuro"}
+          title={theme === "dark" ? "Modo claro" : "Modo oscuro"}
+          className="absolute top-4 left-4 w-9 h-9 rounded-full flex items-center justify-center text-white/90 hover:text-white hover:bg-white/15 transition"
+        >
+          {theme === "dark" ? <HiSun className="text-lg" /> : <HiMoon className="text-lg" />}
+        </button>
+
         {isMobileOpen && (
           <button
             type="button"

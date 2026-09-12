@@ -15,7 +15,7 @@ const WEB3FORMS_ACCESS_KEY = "93736a95-59b2-4273-b098-e7425814537a";
 
 function InfoCard({ icon: Icon, label }) {
   return (
-    <div className="flex flex-col items-center justify-center text-center gap-2 px-3 py-4 rounded-xl border border-ink-300/30 bg-white hover:border-brand-300 hover:shadow-sm transition min-w-0">
+    <div className="flex flex-col items-center justify-center text-center gap-2 px-3 py-4 rounded-xl border border-ink-300/30 bg-white dark:bg-night-card hover:border-brand-300 hover:shadow-sm transition min-w-0">
       <Icon className="text-2xl text-brand-400 shrink-0" />
       <span className="block w-full text-[13px] text-ink-700 font-medium leading-tight break-words">
         {label}
@@ -28,7 +28,7 @@ function FormField({ id, label, type = "text", value, onChange, error, fillHeigh
   const isTextarea = type === "textarea";
 
   const fieldClasses = [
-    "peer w-full rounded-xl border bg-white px-4 pt-5 pb-2 text-sm text-ink-900",
+    "peer w-full rounded-xl border bg-white dark:bg-night-card px-4 pt-5 pb-2 text-sm text-ink-900",
     "placeholder-transparent focus:outline-none focus:ring-1 focus:ring-brand-200 focus:border-brand-400 transition",
     error ? "border-red-300" : "border-ink-300/40",
   ].join(" ");
@@ -38,7 +38,7 @@ function FormField({ id, label, type = "text", value, onChange, error, fillHeigh
   //  - peer-placeholder-shown (empty): sits inside the field like a placeholder
   //  - peer-focus (focused): floats above — generated after placeholder-shown, so it wins
   const labelClasses = [
-    "absolute left-3 -top-2 px-1 bg-white text-xs font-medium pointer-events-none transition-all duration-200",
+    "absolute left-3 -top-2 px-1 bg-white dark:bg-night-card text-xs font-medium pointer-events-none transition-all duration-200",
     error ? "text-red-500" : "text-brand-400",
     // Resting state when input is empty
     "peer-placeholder-shown:top-4",
@@ -55,6 +55,7 @@ function FormField({ id, label, type = "text", value, onChange, error, fillHeigh
     "peer-focus:font-medium",
     "peer-focus:px-1",
     "peer-focus:bg-white",
+    "dark:peer-focus:bg-night-card",
     error ? "peer-focus:text-red-500" : "peer-focus:text-brand-400",
   ].join(" ");
 

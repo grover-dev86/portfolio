@@ -3,6 +3,24 @@
 @tailwind utilities;
 
 @layer base {
+  /* Color tokens — light theme (default) */
+  :root {
+    --c-ink-900: 17 20 24;
+    --c-ink-700: 58 63 71;
+    --c-ink-500: 107 114 128;
+    --c-ink-300: 156 163 175;
+    --c-brand-50: 231 248 253;
+  }
+
+  /* Color tokens — dark theme */
+  .dark {
+    --c-ink-900: 241 243 245;
+    --c-ink-700: 203 210 218;
+    --c-ink-500: 154 164 178;
+    --c-ink-300: 90 100 112;
+    --c-brand-50: 23 33 43;
+  }
+
   html,
   body,
   #root {
@@ -17,6 +35,13 @@
     background-size: 22px 22px, 100% 100%;
     background-position: top left, 0 0;
     background-repeat: repeat, no-repeat;
+  }
+
+  .dark body {
+    background-color: #0b0e12;
+    background-image:
+      radial-gradient(rgba(255, 255, 255, 0.05) 1.2px, transparent 1.2px),
+      linear-gradient(180deg, #0b0e12 0%, #0d1117 60%, #0b0e12 100%);
   }
 
   h1,
@@ -70,4 +95,8 @@
   background-size: 14px 14px;
   pointer-events: none;
   z-index: 0;
+}
+
+.dark .bg-dots-tl::before {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1.4px, transparent 1.4px);
 }
