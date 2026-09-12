@@ -1,6 +1,6 @@
 import {
   HiCodeBracket,
-  HiUserGroup,
+  HiServerStack,
   HiPaintBrush,
   HiRocketLaunch,
 } from "react-icons/hi2";
@@ -9,7 +9,7 @@ import { personalInfo, services } from "../../data/profile";
 
 const iconMap = {
   code: HiCodeBracket,
-  training: HiUserGroup,
+  backend: HiServerStack,
   design: HiPaintBrush,
   performance: HiRocketLaunch,
 };

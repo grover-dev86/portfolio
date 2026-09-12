@@ -30,11 +30,11 @@ export const services = [
       "Desarrollo de sitios y aplicaciones web a medida con React y JavaScript, desde la idea hasta la puesta en producción, con código limpio y mantenible.",
   },
   {
-    id: "training",
-    icon: "training",
-    title: "Formación",
+    id: "backend",
+    icon: "backend",
+    title: "APIs y Backend",
     description:
-      "Clases y mentoría personalizada para quienes dan sus primeros pasos en el desarrollo web, con ejemplos prácticos y acompañamiento paso a paso.",
+      "Creación de APIs y lógica de servidor con Node.js y Next.js para conectar tus aplicaciones con bases de datos de forma segura.",
   },
   {
     id: "design",
