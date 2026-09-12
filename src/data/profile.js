@@ -11,7 +11,7 @@ export const profile = {
 };
 
 export const personalInfo = {
-  bio: "Proin volutpat mauris ac pellentesque pharetra. Suspendisse congue sit vel odio suscipit, sit amet tempor nibh euismod. Quisque eu ipsa, faucibus ut mi in, condimentum finibus dolor. Aliquam vitae imperdiet dolor, eget imperdiet mauris. Maecenas et ante id ipsum condimentum dictum et vel risus. Ut in imperdiet dolor, vel consectetur dui.",
+  bio: "Soy Grover Cristobal, desarrollador web freelance con base en Lima, Perú. Me especializo en crear sitios y aplicaciones web modernas con React y JavaScript, cuidando el rendimiento, la accesibilidad y una experiencia de usuario clara. Disfruto convirtiendo ideas en productos digitales funcionales y acompañar a quienes empiezan en la programación.",
   country: "Perú",
   city: "Lima",
 	email: "grover.cristobal.1986@gmail.com",
@@ -27,13 +27,13 @@ export const services = [
     icon: "code",
     title: "Programación",
     description:
-      "Pellentesque pellentesque pharetra. Ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh.",
+      "Desarrollo de sitios y aplicaciones web a medida con React y JavaScript, desde la idea hasta la puesta en producción, con código limpio y mantenible.",
   },
   {
     id: "training",
     icon: "training",
     title: "Formación",
     description:
-      "Pellentesque pellentesque pharetra. Ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh.",
+      "Clases y mentoría personalizada para quienes dan sus primeros pasos en el desarrollo web, con ejemplos prácticos y acompañamiento paso a paso.",
   },
 ];

@@ -4,14 +4,14 @@ export const education = [
     school: "Universidad de Madrid",
     title: "Desarrollo Web",
     description:
-      "Maecenas finibus nec sem ut imperdiet. Ut tincidunt sed ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.",
+      "Formación en los fundamentos del desarrollo web: HTML, CSS y JavaScript, junto a buenas prácticas de maquetación y diseño responsivo.",
   },
   {
     year: "2008",
     school: "Universidad de Madrid",
     title: "Edición de Vídeo",
     description:
-      "Aliquam tincidunt malesuada tortor ultricies eu, lectus turpis iaculis feugiat risus quis, aliquet urna. Quisque fringilla mollis risus eu, pulvinar dolor.",
+      "Aprendizaje de técnicas de edición y producción audiovisual, manejo de herramientas profesionales y narrativa visual.",
   },
 ];
 
