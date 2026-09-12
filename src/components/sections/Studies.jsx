@@ -8,9 +8,11 @@ import {
 
 function TimelineItem({ entry }) {
   return (
-    <article className="grid grid-cols-[68px_1fr] gap-4 pb-6">
+    <article className="grid grid-cols-[80px_1fr] gap-4 pb-6">
       <div className="text-right">
-        <p className="text-xs font-semibold text-ink-900">{entry.year}</p>
+        <p className="text-xs font-semibold text-ink-900 whitespace-nowrap">
+          {entry.year}
+        </p>
         <p className="text-[10px] uppercase tracking-wider text-ink-500 mt-1">
           {entry.school || entry.company}
         </p>
