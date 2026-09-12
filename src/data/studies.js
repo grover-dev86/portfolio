@@ -1,34 +1,34 @@
 export const education = [
   {
-    year: "2010",
-    school: "Universidad de Madrid",
-    title: "Desarrollo Web",
+    year: "2024",
+    school: "APX School",
+    title: "Desarrollo Web Fullstack",
     description:
       "Formación en los fundamentos del desarrollo web: HTML, CSS y JavaScript, junto a buenas prácticas de maquetación y diseño responsivo.",
   },
   {
-    year: "2008",
-    school: "Universidad de Madrid",
-    title: "Edición de Vídeo",
+    year: "2018",
+    school: "EDteam",
+    title: "Desarrollo Frontend",
     description:
-      "Aprendizaje de técnicas de edición y producción audiovisual, manejo de herramientas profesionales y narrativa visual.",
+      "Aprendizaje de CSS, JS y APIs.",
   },
 ];
 
 export const experience = [
   {
-    year: "2018 — Hoy",
-    company: "Freelance",
-    title: "Full-Stack Developer",
+    year: "2025 - Hoy",
+    company: "TD",
+		title: "Front-End Developer",
     description:
-      "Desarrollo de aplicaciones a medida con React, Node y bases de datos relacionales. Consultoría técnica y mentoring.",
+			"Desarrollo de aplicaciones a medida con React y Typescript usando VTEX IO. Migración de Módulos de Reportes, Órdenes y Preordenes.",
   },
   {
-    year: "2014 — 2018",
-    company: "AgenciaWeb S.L.",
+    year: "2022 - 2025",
+    company: "Medialab",
     title: "Front-End Developer",
     description:
-      "Implementación de sitios corporativos y e-commerce. Integración con CMS, optimización de rendimiento y accesibilidad.",
+      "Desarrollo de componentes customizados usando Plataforma Ecommerce VTEX IO. Integración de APIs de VTEX IO en distintos desarrollos. Creación de landings.",
   },
 ];
 
