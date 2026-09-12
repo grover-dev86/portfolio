@@ -1,10 +1,17 @@
-import { HiCodeBracket, HiUserGroup } from "react-icons/hi2";
+import {
+  HiCodeBracket,
+  HiUserGroup,
+  HiPaintBrush,
+  HiRocketLaunch,
+} from "react-icons/hi2";
 import SectionShell from "../SectionShell";
 import { personalInfo, services } from "../../data/profile";
 
 const iconMap = {
   code: HiCodeBracket,
   training: HiUserGroup,
+  design: HiPaintBrush,
+  performance: HiRocketLaunch,
 };
 
 function InfoRow({ label, value }) {

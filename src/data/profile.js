@@ -36,4 +36,18 @@ export const services = [
     description:
       "Clases y mentoría personalizada para quienes dan sus primeros pasos en el desarrollo web, con ejemplos prácticos y acompañamiento paso a paso.",
   },
+  {
+    id: "design",
+    icon: "design",
+    title: "Diseño Web / UI",
+    description:
+      "Diseño de interfaces modernas, limpias y responsivas que se ven y funcionan bien en cualquier dispositivo.",
+  },
+  {
+    id: "performance",
+    icon: "performance",
+    title: "Optimización",
+    description:
+      "Mejora del rendimiento, el SEO y la accesibilidad para que tu sitio cargue rápido y llegue a más personas.",
+  },
 ];
