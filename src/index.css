@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply font-sans text-ink-700 bg-canvas antialiased;
+    background-image:
+      radial-gradient(rgba(15, 23, 42, 0.06) 1.2px, transparent 1.2px),
+      linear-gradient(180deg, #eef2f5 0%, #f4f6f8 60%, #eef2f5 100%);
+    background-size: 22px 22px, 100% 100%;
+    background-position: top left, 0 0;
+    background-repeat: repeat, no-repeat;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-ink-900 font-semibold;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold text-ink-900 tracking-tight;
+  }
+
+  .section-title .accent {
+    @apply text-brand-400;
+  }
+
+  .pill-btn {
+    @apply inline-flex items-center justify-center px-5 py-2 rounded-full border border-white/80 text-white text-sm font-medium tracking-wide transition hover:bg-white hover:text-brand-500 focus:outline-none focus:ring-2 focus:ring-white/70;
+  }
+
+  .filter-chip {
+    @apply text-sm font-medium text-ink-500 hover:text-brand-500 transition-colors px-2 py-1 relative;
+  }
+
+  .filter-chip.is-active {
+    @apply text-brand-500;
+  }
+
+  .filter-chip.is-active::after {
+    content: "";
+    @apply absolute left-1/2 -bottom-1 h-0.5 w-6 -translate-x-1/2 bg-brand-400 rounded-full;
+  }
+
+  .info-label {
+    @apply text-xs uppercase tracking-[0.18em] text-ink-500 font-medium;
+  }
+}
+
+/* Subtle dot decoration in top-left */
+.bg-dots-tl::before {
+  content: "";
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  width: 120px;
+  height: 80px;
+  background-image: radial-gradient(rgba(15, 23, 42, 0.15) 1.4px, transparent 1.4px);
+  background-size: 14px 14px;
+  pointer-events: none;
+  z-index: 0;
+}
