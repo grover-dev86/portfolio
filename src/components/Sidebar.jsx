@@ -33,7 +33,7 @@ export default function Sidebar({
 
       <aside
         className={[
-          "bg-brand-400 text-white flex flex-col items-center",
+          "bg-brand-400 dark:bg-brand-600 text-white flex flex-col items-center",
           "px-6 py-8 lg:rounded-l-3xl",
           "fixed lg:static top-0 right-0 h-full w-80 max-w-[85%] z-40",
           "transition-transform duration-300 ease-out",

@@ -17,7 +17,7 @@ function TimelineItem({ entry }) {
           {entry.school || entry.company}
         </p>
       </div>
-      <div className="border-l-2 border-brand-100 pl-4 -ml-2">
+      <div className="border-l-2 border-brand-100 dark:border-white/10 pl-4 -ml-2">
         <h4 className="font-semibold text-ink-900 text-sm">{entry.title}</h4>
         <p className="text-xs text-ink-500 mt-1 leading-relaxed">
           {entry.description}
