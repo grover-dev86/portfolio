@@ -4,14 +4,14 @@ export const education = [
     school: "APX School",
     title: "Desarrollo Web Fullstack",
     description:
-      "Formación en los fundamentos del desarrollo web: HTML, CSS y JavaScript, junto a buenas prácticas de maquetación y diseño responsivo.",
+      "Programa intensivo de desarrollo web fullstack: JavaScript moderno, React y Node.js, consumo y creación de APIs, bases de datos y buenas prácticas de código, maquetación responsiva y despliegue de aplicaciones.",
   },
   {
     year: "2018",
     school: "EDteam",
     title: "Desarrollo Frontend",
     description:
-      "Aprendizaje de CSS, JS y APIs.",
+      "Bases del desarrollo frontend: HTML y CSS semántico, JavaScript, diseño responsivo y consumo de APIs para construir interfaces interactivas.",
   },
 ];
 
@@ -40,6 +40,11 @@ export const designSkills = [
 
 export const codeSkills = [
   { name: "JavaScript", level: 92 },
-  { name: "PHP", level: 78 },
+  { name: "TypeScript", level: 85 },
+  { name: "React", level: 90 },
+  { name: "Next.js", level: 80 },
+  { name: "Node.js", level: 75 },
   { name: "HTML / CSS", level: 96 },
+  { name: "Git", level: 82 },
+  { name: "PHP", level: 78 },
 ];
