@@ -11,7 +11,7 @@ import { personalInfo } from "../../data/profile";
 const initialForm = { name: "", email: "", subject: "", message: "" };
 
 // 👇 Reemplaza esto por tu Access Key de https://web3forms.com (gratis, sin tarjeta).
-const WEB3FORMS_ACCESS_KEY = "TU_ACCESS_KEY_AQUI";
+const WEB3FORMS_ACCESS_KEY = "93736a95-59b2-4273-b098-e7425814537a";
 
 function InfoCard({ icon: Icon, label }) {
   return (
