@@ -20,9 +20,19 @@ const sectionMap = {
 
 const validSections = Object.keys(sectionMap);
 
+// La página de inicio vive en "/"; el resto en "/about", "/contact", etc.
+function pathToSection(pathname) {
+  const seg = pathname.replace(/^\/+|\/+$/g, "");
+  if (seg === "") return "home";
+  return validSections.includes(seg) ? seg : "home";
+}
+
+function sectionToPath(section) {
+  return section === "home" ? "/" : `/${section}`;
+}
+
 function getInitialSection() {
-  const hash = window.location.hash.replace("#", "");
-  return validSections.includes(hash) ? hash : "home";
+  return pathToSection(window.location.pathname);
 }
 
 function getInitialTheme() {
@@ -55,16 +65,18 @@ export default function App() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
 
   useEffect(() => {
-    window.location.hash = activeSection;
+    const path = sectionToPath(activeSection);
+    if (window.location.pathname !== path) {
+      window.history.pushState(null, "", path);
+    }
   }, [activeSection]);
 
   useEffect(() => {
-    const onHashChange = () => {
-      const hash = window.location.hash.replace("#", "");
-      if (validSections.includes(hash)) setActiveSection(hash);
+    const onPopState = () => {
+      setActiveSection(pathToSection(window.location.pathname));
     };
-    window.addEventListener("hashchange", onHashChange);
-    return () => window.removeEventListener("hashchange", onHashChange);
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
   const handleNavigate = (id) => {
